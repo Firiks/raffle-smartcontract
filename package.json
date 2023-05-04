@@ -1,0 +1,51 @@
+{
+  "name": "08-smartcontract-raffle",
+  "author": "Firiks",
+  "version": "1.0.0",
+  "license": "MIT",
+  "description": "Smartcontract Raffle",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NomicFoundation/hardhat-boilerplate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/NomicFoundation/hardhat-boilerplate/issues"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3"
+  },
+  "devDependencies": {
+    "@chainlink/contracts": "^0.5.1",
+    "@ethersproject/abi": "^5.7.0",
+    "@ethersproject/providers": "^5.7.2",
+    "@nomicfoundation/hardhat-chai-matchers": "^1.0.6",
+    "@nomicfoundation/hardhat-network-helpers": "^1.0.8",
+    "@nomicfoundation/hardhat-toolbox": "^2.0.1",
+    "@nomiclabs/hardhat-ethers": "npm:hardhat-deploy-ethers@^0.3.0-beta.13",
+    "@nomiclabs/hardhat-etherscan": "^3.1.4",
+    "chai": "^4.3.7",
+    "ethers": "^5.7.2",
+    "hardhat": "^2.12.5",
+    "hardhat-contract-sizer": "^2.8.0",
+    "hardhat-deploy": "^0.11.22",
+    "hardhat-gas-reporter": "^1.0.9",
+    "prettier-plugin-solidity": "^1.1.1",
+    "solhint": "^3.3.7",
+    "solidity-coverage": "^0.8.2"
+  },
+  "scripts": {
+    "tests": "npx hardhat test",
+    "chain": "npx hardhat node",
+    "cleanup": "npx hardhat clean",
+    "compile": "npx hardhat compile --verbose",
+    "coverage": "npx hardhat coverage",
+    "deploy-local": "npx hardhat deploy --network hardhat --tags all",
+    "deploy-sepolia": "npx hardhat deploy --network sepolia --tags raffle",
+    "verify": "npx hardhat verify",
+    "flatten": "npx hardhat flatten",
+    "format": "npx prettier --write .",
+    "lint": "npx solhint contracts/**/*.sol",
+    "lint:fix": "npx solhint contracts/**/*.sol --fix",
+    "size": "npx hardhat size-contracts"
+  }
+}
