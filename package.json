@@ -42,6 +42,8 @@
     "deploy-local": "npx hardhat deploy --network hardhat --tags all",
     "deploy-sepolia": "npx hardhat deploy --network sepolia --tags raffle",
     "verify": "npx hardhat verify",
+    "enter": "npx hardhat run scripts/enter.js --network localhost",
+    "mockvrf" : "npx hardhat run scripts/mockOffchain.js --network localhost",
     "flatten": "npx hardhat flatten",
     "format": "npx prettier --write .",
     "lint": "npx solhint contracts/**/*.sol",

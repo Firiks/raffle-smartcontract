@@ -3,11 +3,13 @@
  */
 
 const { ethers, network } = require("hardhat");
+const { networkConfig } = require("../helper-hardhat-config");
 
 async function mockKeepers() {
-  // if network is local, increase time to +30 seconds
+  // if network is local, increase time
   if (network.config.chainId == 31337) {
-    const interval = 30;
+    const interval = parseInt(networkConfig[network.config.chainId].keepersUpdateInterval) + 1;
+    console.log(`Increasing time by ${interval} seconds...`);
     await network.provider.send("evm_increaseTime", [interval]); // increase/decrease time by value
     await network.provider.request({ method: "evm_mine"}); // mine the next block
   }
