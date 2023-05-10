@@ -17,7 +17,7 @@ const networkConfig = {
   },
   11155111: {
     name: "sepolia",
-    subscriptionId: "6926",
+    subscriptionId: "6926", // subscription id for random number generation
     gasLane: "0x474e34a077df58807dbe9c96d3c009b23b3c6d0cce433e59bbf5b34f823bc56c", // gass lane address for 30 gwei,
     keepersUpdateInterval: "30", // 30 seconds to update keepers
     raffleEntranceFee: ethers.utils.parseEther("0.01"), // 0.01 ETH
