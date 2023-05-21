@@ -65,7 +65,7 @@ module.exports = {
       accounts: PRIVATE_KEY !== undefined ? [PRIVATE_KEY] : [],
       saveDeployments: true,
       chainId: 137,
-  },
+    },
   },
   solidity: { // manage solidity compiler versions
     compilers: [ // handle multiple versions of solidity
