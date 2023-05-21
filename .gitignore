@@ -9,6 +9,9 @@ node_modules
 coverage
 coverage.json
 typechain
+constants/*.json
+gas-report.txt
+contracts/test/fuzzing/crytic-export
 
 # don't push the environment vars!
 .env
@@ -97,7 +100,3 @@ lint/generated/
 lint/outputs/
 lint/tmp/
 # lint/reports/
-
-gas-report.txt
-
-contracts/test/fuzzing/crytic-export
